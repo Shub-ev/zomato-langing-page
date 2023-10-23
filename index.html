@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:ital@1&family=Fuggles&family=Great+Vibes&family=Lobster&family=Montserrat:wght@200;600&family=Playpen+Sans:wght@700&family=Poppins&family=Young+Serif&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+    <style>
+        .start{
+            background-image: url(./img/zomato-landing-img.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .zomato-desc{
+            width: 590px;
+        }
+        .zomato-title{
+            font-size: 80px;
+            font-family: 'Playpen Sans';
+        }
+        .zomato-title-desc{
+            font-size: 38px;
+            line-height: 45px;
+        }
+        .locations-desc-title{
+            font-size: 38px;
+        }
+        .location-card{
+            border-width: 1px;
+            width: 360px;
+            height: 66px;
+            box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .country-card{
+            border-width: 1px;
+            width: 360px;
+            height: 72px;
+            box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .footer{
+            height: 482px;
+        }
+        .footer-title span{
+            font-size: 40px;
+        }
+        .TandC{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <div class="wrapper w-screen bg-white">
+        <div class="start h-[570px] flex-row justify-center">
+            <div class="navbar w-4/6 h-16 mx-auto">
+                <ul class="flex float-right mt-5 text-lg text-gray-100 gap-10 mr-28">
+                    <li class="cursor-pointer hover:text-white">Add restaurant</li>
+                    <li class="cursor-pointer hover:text-white">Log in</li>
+                    <li class="cursor-pointer hover:text-white">Sign up</li>
+                </ul>
+            </div>
+            <div class="zomato-desc mx-auto h-[400px] pt-32">
+                <div class="zomato-title text-center font-extrabold font-serif text-white">zomato</div>
+                <div class="zomato-title-desc text-center text-white">Find the best restaurants, cafés and bars in India</div>
+            </div>
+        </div>
+
+        <div class="locations-desc w-4/6 mx-auto mt-9 flex-col">
+            <div class="locations-desc-title text-center text-gray-700 tracking-wider">Popular locations in India</div>
+            <div class="locations-des-infoc mt-8 text-xl font-light text-gray-600 text-center w-4/5 mx-auto tracking-wider">From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food, Zomato covers it all. Explore menus, and millions of restaurant photos and reviews from users just like you, to find your next great meal.</div>
+        </div>
+
+        <div class="w-screen">
+            <div class="location-cards grid lg:grid-cols-3 w-fit gap-x-5 gap-y-8 mx-auto mt-20 md:grid-cols-2">
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Agra Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Ahmedabad Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Ajmer Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Alappuzha Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Allahabad Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Amravati Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Amritsar Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Aurangabad Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Bengaluru Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Bhopal Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Bhubaneshwad Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Chandigarh Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Chennai Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Coimbatore Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Cuttack Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Darjeeling Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Dehradun Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Delhi NCR Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Dharamshala Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Gangtok Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Goa Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Gorakhour Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Guntur Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Guwahati Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Gwalior Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Haridwar Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Hyderabad Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Indore Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Jabalpur Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Jaipur Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Jalandhar Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Jammu Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Jamnagar Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Jamshedpur Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Jhansi Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+                <div class="location-card flex pl-8 text-xl text-gray-700 items-center rounded-lg hover:cursor-pointer hover:shadow-md">Jodhpur Restaurants <span class="ml-auto mr-6 text-xl">></span></div>
+            </div>
+
+            <div class="countries-title w-4/6 mx-auto">
+                <div class="text-4xl text-gray-800 font-medium mt-14">All Countries</div>
+            </div>
+            <div class="coutry grid grid-cols-3 w-fit gap-x-5 gap-y-8 mx-auto mt-20">
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-in.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">India</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-au.png" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Australia</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-br.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Brazil</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomato-ca.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Canada</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomato-cl.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Chile</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomato-cz.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Czech Republic</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomato-id.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Indonesia</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-ie.png" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Ireland</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-it.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Italy</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-lb.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Lebanon</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-my.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Malaysia</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-nz.png" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">New Zealand</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-ph.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Philippines</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-pl.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Poland</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-pt.png" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Portugal</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-qa.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Qatar</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-sg.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Singapore</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-sk.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Slovakia</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-za.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">South Africa</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-lk.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Sri Lanka</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-tr.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">Turkey</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-ae.webp" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">UAE</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-gb.png" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">United Kingdom</span><span class="ml-auto mr-6 text-xl" >></span></div>
+                <div class="country-card flex items-center rounded-lg hover:cursor-pointer hover:shadow-md"><img src="./img/zomata-us.png" alt="" class="ml-6 w-12"><span class="ml-4 text-2xl text-gray-600">United States</span><span class="ml-auto mr-6 text-xl" >></span></div>
+            </div>
+        </div>
+
+        <footer class="footer w-screen bg-[#f8f8f8] mt-10">
+            <div class="w-4/6 mx-auto">
+                <div class="footer-title pt-9 text-gray-800 flex items-center"><span class="font-extrabold">zomato</span><div class="footer-options ml-auto flex items-center gap-10"><div class="dropdown-country text-xl border-2 px-4 py-2 rounded-lg w-32 text-center">India</div><div class="dropdown-language text-xl border-2 px-4 py-2 rounded-lg w-32 text-center">English</div></div></div>
+                <div class="footer-columns grid grid-cols-5 mt-8 border-b-2 border-gray-200 pb-10">
+                    <div class="footer-col1 flex flex-col">
+                        <span class="footer-col1-title mb-3 text-lg font-normal text-black">ABOUT ZOMATO</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Who We Are</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Blog</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Word With Us</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Investor Relations</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Report Fraud</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Press Kit</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Contact Us</span>
+                    </div>
+                    <div class="footer-col1 flex flex-col">
+                        <span class="footer-col1-title mb-3 text-lg font-normal text-black">ZOMAVERSE</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Zomato</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Blinkit</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Feeding India</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Hyperpure</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Zomaland</span>
+                    </div>
+                    <div class="footer-col1 flex flex-col">
+                        <span class="footer-col1-title mb-3 text-lg font-normal text-black">FOR RESTAURANTS</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Partner With Us</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Apps For You</span>
+                        <span class="footer-col1-title mb-3 text-lg font-normal text-black mt-10">FOR ENTERPRISES</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Zomato For Enterprise</span>
+                    </div>
+                    <div class="footer-col1 flex flex-col">
+                        <span class="footer-col1-title mb-3 text-lg font-normal text-black">LEARN MORE</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Privacy</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Security</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Terms</span>
+                        <span class="text-gray-600 mt-1 font-light hover:cursor-pointer hover:font-normal">Sitemap</span>
+                    </div>
+                    <div class="footer-col1 flex flex-col">
+                        <span class="footer-col1-title mb-3 text-lg font-normal text-black">SOCIAL LINKS</span>
+                        <img src="./img/app-store.webp" alt="" class="h-10 w-32 hover:cursor-pointer hover:font-normal mt-4">
+                        <img src="./img/play-store.webp" alt="" class="h-10 w-32 hover:cursor-pointer hover:font-normal mt-4">
+                    </div>
+                </div>
+                <div class="TandC text-gray-500 mt-2">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
